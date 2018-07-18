@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/slidemenu.js' %}" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Victoria &amp; Timothy — Minted</title>
+    <link rel="shortcut icon"
+          href="https://d3t14gfu9ehll4.cloudfront.net/themes/4cbe0dae-e027-4aaf-9d52-ddb015486ba8/root_SmallGraphic_ARTuIHa.png"
+          type="image/png">
+    <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=Trend%20Sans:One">
+    <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=Futura%20Md%20BT:One">
+</head>
+<body>
+<div class="сontainer">
+    <h1 class="largeHeadline">Victoria</h1>
+    <div class="smallHeadline">AND</div>
+    <h1 class="largeHeadline">Timothy</h1>
+
+    <div id="navbar">
+        <ul>
+            <li><a href="/main_page/">HOME</a></li>
+            <li><a href="/rsvp/">RSVP</a></li>
+            <li><a href="/photo/">PHOTOS</a></li>
+            <li><a href="/event/">EVENTS</a></li>
+            <li><a href="/party/">WEDDING PARTY</a></li>
+            <li><a href="/travel/">TRAVEL</a></li>
+            <li><a href="/gift/">GIFT REGISTRY</a></li>
+        </ul>
+    </div>
+    <ul id="hide">
+        <li><a class="micon">&#9776;MENU</a>
+            <ul>
+                <li><a href="/main_page/">HOME</a></li>
+                <li><a href="/rsvp/">RSVP</a></li>
+                <li><a href="/photo/">PHOTOS</a></li>
+                <li><a href="/event/">EVENTS</a></li>
+                <li><a href="/party/">WEDDING PARTY</a></li>
+                <li><a href="/travel/">TRAVEL</a></li>
+                <li><a href="/gift/">GIFT REGISTRY</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div id="class">
+        {% if  model_photo.0 %}
+            <img src="{{ model_photo.0.photo.url }}" id="mainimg">
+        {% endif %}
+    </div>
+
+    <p class="smallHeadline">Please join us for our wedding celebration on</p>
+    <h1 class="largeLetters">AUGUST 1, 2019</h1>
+    <div class="smallGraphic"></div>
+    <h1 class="largeLetters">OUR STORY</h1>
+
+    {% if  model_text.0 %}
+        <p class="text"> {{ model_text.0.body }} </p>
+    {% endif %}
+</div>
+
+<hr color="black">
+
+{% include "blog/footer.html" %}
+
+</body>
+</html>

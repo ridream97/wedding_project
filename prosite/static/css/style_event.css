@@ -1,0 +1,338 @@
+body {
+    font-family: "Futura Md BT";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 14px;
+    margin: 0;
+    background-color: #fff;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    color: #222;
+    font-variant-ligatures: none;
+}
+body a {color: #000000;}
+body a:focus, body a:hover, body a:active {color: rgb(0, 0, 0);}
+button::-moz-focus-inner {border: 0; padding: 0;}
+
+/*************************Navbar**************************/
+
+#navbar {
+    overflow: hidden;
+    background-color: #fff;
+    padding-left: 250px;
+}
+
+#navbar a {
+    color: #111;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    font-family:"Trend Sans One";
+}
+#navbar li{
+    float: left;
+    list-style: none;
+    padding: 0 15px;
+}
+
+#navbar a:hover {
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+#hide {
+    display: none;
+    }
+
+
+        @media screen and (max-width: 1350px) {
+             #navbar {
+                padding-left:160px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+             #navbar {
+                padding-left:100px;
+            }
+        }
+
+         @media screen and (max-width: 900px) {
+             #navbar {
+                 display: none;
+             }
+            #hide {
+                font-size: 25px;
+                display: block;
+                text-decoration: none;
+                list-style: none;
+                margin-left: -60px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            #hide {
+                font-size: 20px;
+                display: block;
+                text-decoration: none;
+                list-style: none;
+                text-align: center;
+            }
+        }
+
+
+#hide ul{
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+}
+#hide li:hover ul { display: block; }
+#hide, #hide ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+#hide {
+    color: #000000;
+    height: 40px;
+    background-color: #fff;
+    padding-left: 20px;
+    font-size:20px;
+    text-align: center;
+    min-width: 490px;
+}
+#hide li {
+    float: left;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+#hide li a {
+
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+    width: 190px;
+    color: #000000;;
+    text-decoration: none;
+    text-align: center;
+}
+#hide ul li { float: none;border: 1px solid #2d2d2d; }
+#hide li:hover { background-color: #fff; }
+#hide ul li:hover { background-color: #fff; }
+
+    /*********************************************************/
+
+
+.smallDivider{
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    background-image: url(https://d3t14gfu9ehll4.cloudfront.net/themes/4cbe0dae-e027-4aaf-9d52-ddb015486ba8/root_SmallDivider_3frXmei.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.contsD{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.сontainer {
+    font-family: "Futura Md BT";
+    font-weight:400;
+    font-style:normal;
+    line-height:2;
+    text-transform:none;
+    letter-spacing:normal;
+    font-size:14px;
+    color:#222;
+    text-align:center;
+    padding:50px 0 50px 100px;
+    margin-left: 32.4%;
+}
+
+/************Text**************/
+
+.largeHeadline {
+    font-family:"Trend Sans One";
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.smallGraphic{
+    text-align: center;
+    margin-bottom: -26px;
+    display: inline-block;
+    width:120px;
+    height:80px;
+    background-image:url(https://d3t14gfu9ehll4.cloudfront.net/themes/4cbe0dae-e027-4aaf-9d52-ddb015486ba8/root_SmallGraphic_ARTuIHa.png);
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.largeWord{
+    font-family: "Trend Sans One";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 35px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+        @media screen and (max-width: 1200px) {
+             .largeHeadline {
+                 font-size: 25px;
+             }
+
+             .smallGraphic {
+                 width:100px;
+                 height:60px;
+                 margin-bottom: -21px;
+             }
+        }
+
+         @media screen and (max-width: 700px) {
+
+              .largeHeadline {
+                 font-size: 15px;
+             }
+              .smallGraphic{
+                 width:80px;
+                 height:40px;
+                 margin-bottom: -17px;
+             }
+         }
+        @media screen and (max-width: 500px) {
+
+              .largeHeadline {
+                 font-size: 12px;
+             }
+              .smallGraphic{
+                 width:80px;
+                 height:40px;
+
+             }
+         }
+
+
+ /******************************/
+.content{
+    height: 700px;
+    width: 1200px;
+    margin-left: 30px;
+}
+.placeDescript{
+    width: 500px;
+    height: 300px;
+    margin-left: 150px;
+    display: block;
+    float: left;
+
+}
+.number{
+    display: inline-block;
+    left: -60px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    font-family: "Futura Md BT";
+    font-size: 16px;
+}
+.titleDesc{
+    font-family: "Trend Sans One";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 25px;
+    font-size: 20px;
+    display: inline;
+    font-weight: 500;
+
+}
+.text{
+    display: inline-flex;
+    margin-left: 60px;
+}
+
+.direction{
+    display: inline-flex;
+    font-family: "Trend Sans One";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.map{
+    float: right;
+    width: 400px;
+    height: 350px;
+    border-color: gray ;
+    box-shadow: 0 0 0px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+
+
+
+/******************************************************************************************************************/
+
+
+  @font-face {
+    font-family: "Trend Sans One";
+    font-style: normal;
+    font-weight: 200;
+    src: local("TrendSansOne"), local('TrendSansOne'), url("https://d3jpwrui3eswtl.cloudfront.net/trendsans/TrendSansOne-Regular.otf") format('opentype');
+  }
+
+  @font-face {
+    font-family: "Trend Sans";
+    font-style: normal;
+    font-weight: 200;
+    src: local("TrendSansOne"), local('TrendSansOne'), url("https://d3jpwrui3eswtl.cloudfront.net/trendsans/TrendSansOne-Regular.otf") format('opentype');
+  }
+
+
+  @font-face {
+    font-family: "Futura Md BT Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Futura Medium BT"), local('FuturaBT-Medium'), url("https://d3jpwrui3eswtl.cloudfront.net/futuramdbt/FuturaMediumBT-Medium.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: "Futura Md BT";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Futura Medium BT"), local('FuturaBT-Medium'), url("https://d3jpwrui3eswtl.cloudfront.net/futuramdbt/FuturaMediumBT-Medium.ttf") format('truetype');
+  }
+
+
+

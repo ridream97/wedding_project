@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/style_event.css' %}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="./Victoria &amp; Timothy — Minted_files/css">
+    <title>Victoria &amp; Timothy — Minted</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="largeHeadline" style="margin-left: 30%;">
+        <h1 class="largeHeadline">Victoria</h1>
+    </div>
+
+    <div class="smallGraphic">
+    </div>
+
+    <div class="largeHeadline">
+        <h1 class="largeHeadline">Timothy</h1>
+    </div>
+
+</div>
+<div id="navbar">
+    <ul>
+        <li><a href="/main_page/">HOME</a></li>
+        <li><a href="/rsvp/">RSVP</a></li>
+        <li><a href="/photo/">PHOTOS</a></li>
+        <li><a href="/event/">EVENTS</a></li>
+        <li><a href="/party">WEDDING PARTY</a></li>
+        <li><a href="/travel/">TRAVEL</a></li>
+        <li><a href="/gift/">GIFT REGISTRY</a></li>
+    </ul>
+</div>
+<ul id="hide">
+    <li><a>&#9776;MENU</a>
+        <ul>
+            <li><a href="/main_page/">HOME</a></li>
+            <li><a href="/rsvp/">RSVP</a></li>
+            <li><a href="/photo/">PHOTOS</a></li>
+            <li><a href="/event/">EVENTS</a></li>
+            <li><a href="/party/">WEDDING PARTY</a></li>
+            <li><a href="/travel/">TRAVEL</a></li>
+            <li><a href="/gift/">GIFT REGISTRY</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+<br><br>
+<hr color="black">
+
+<h2 class="largeWord">Events</h2>
+
+<div class="contsD">
+    <div class="smallDivider"></div>
+</div>
+
+
+<div class="content">
+
+    <div class="placeDescript">
+        <div class="number">1</div>
+        <h4 class="titleDesc">WEDDING CEREMONY</h4>
+
+        <div class="text">
+            <br>5:00 PM, August 1, 2017
+            <br>Golden Gate Park Rose Garden
+            <br>425 John F Kennedy Dr, San Francisco, CA 94118
+        </div>
+
+        <div class="direction">
+            <br>Get Directions
+        </div>
+
+    </div>
+
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d679.8526696089532!2d28.853856762330206!3d47.032171675716334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d47.0321049!2d28.853897!4m0!5e0!3m2!1sru!2s!4v1530599831217"
+                class="map"></iframe>
+    </div>
+
+
+    <div class="placeDescript">
+        <div class="number">2</div>
+        <h4 class="titleDesc">RECEPTION</h4>
+
+        <div class="text">
+            <br>5:00 PM, August 1, 2017
+            <br>Golden Gate Park Rose Garden
+            <br>425 John F Kennedy Dr, San Francisco, CA 94118
+        </div>
+        <div class="direction">
+            <br>Get Directions
+        </div>
+    </div>
+
+</div>
+
+<hr color="black">
+
+{% include "blog/footer.html" %}
+
+</body>
+</html>

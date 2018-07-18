@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/style_photo.css' %}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon"
+          href="https://d3t14gfu9ehll4.cloudfront.net/themes/4cbe0dae-e027-4aaf-9d52-ddb015486ba8/root_SmallGraphic_ARTuIHa.png"
+          type="image/png">
+    <title>Victoria &amp; Timothy — Minted</title>
+
+</head>
+<body>
+<div class="container">
+    <div class="headlpos">
+        <h1 class="largeHeadline">Victoria</h1>
+    </div>
+
+    <div class="smallGraphic">
+    </div>
+
+    <div class="largeHeadline">
+        <h1 class="largeHeadline">Timothy</h1>
+    </div>
+</div>
+<div id="navbar">
+    <ul>
+        <li><a href="/main_page/">HOME</a></li>
+        <li><a href="/rsvp/">RSVP</a></li>
+        <li><a href="/photo/">PHOTOS</a></li>
+        <li><a href="/event/">EVENTS</a></li>
+        <li><a href="/party/">WEDDING PARTY</a></li>
+        <li><a href="/travel/">TRAVEL</a></li>
+        <li><a href="/gift/">GIFT REGISTRY</a></li>
+    </ul>
+</div>
+
+<ul id="hide">
+    <li><a>&#9776;MENU</a>
+        <ul>
+            <li><a href="/main_page/">HOME</a></li>
+            <li><a href="/rsvp/">RSVP</a></li>
+            <li><a href="/photo/">PHOTOS</a></li>
+            <li><a href="/event/">EVENTS</a></li>
+            <li><a href="/party/">WEDDING PARTY</a></li>
+            <li><a href="/travel/">TRAVEL</a></li>
+            <li><a href="/gift/">GIFT REGISTRY</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+<br><br>
+<hr color="black">
+<div class="maidinfo">
+    <div class="contlL">
+        <h2 class="largeLetters">Photos</h2>
+    </div>
+    <div class="contsD">
+        <div class="smallDivider"></div>
+    </div>
+</div>
+
+<div class="contphoto">
+
+    <div class="images">
+        {% if  model_photo.2 %}
+            <img src="{{ model_photo.2.photo.url }}" class="foto_a">
+        {% endif %}
+    </div>
+
+    <div class="images">
+        {% if  model_photo.3 %}
+            <img src="{{ model_photo.3.photo.url }}" class="foto_b">
+        {% endif %}
+    </div>
+
+    <div class="images">
+        {% if  model_photo.4 %}
+            <img src="{{ model_photo.4.photo.url }}" class="foto_c">
+        {% endif %}
+    </div>
+
+    <div class="images">
+        {% if  model_photo.5 %}
+            <img src="{{ model_photo.5.photo.url }}" class="foto_d">
+        {% endif %}
+    </div>
+
+    <div class="images">
+        {% if  model_photo.6 %}
+            <img src="{{ model_photo.6.photo.url }}" class="foto_e">
+        {% endif %}
+    </div>
+
+    <div class="images">
+        {% if  model_photo.7 %}
+            <img src="{{ model_photo.7.photo.url }}" class="foto_f">
+        {% endif %}
+    </div>
+
+    <div class="images">
+        {% if  model_photo.8 %}
+            <img src="{{ model_photo.8.photo.url }}" class="foto_g">
+        {% endif %}
+    </div>
+
+    <div class="images">
+        {% if  model_photo.9 %}
+            <img src="{{ model_photo.9.photo.url }}" class="foto_h">
+        {% endif %}
+    </div>
+    <div class="images">
+        {% if  model_photo.1 %}
+            <img src="{{ model_photo.1.photo.url }}" class="foto_i">
+        {% endif %}
+    </div>
+</div>
+
+<hr color="black">
+{% include "blog/footer.html" %}
+</body>
+</html>

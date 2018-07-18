@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html>
+<head>
+
+    <link rel="stylesheet" href="{% static 'css/style_party.css' %}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Victoria &amp; Timothy — Minted</title>
+    <link rel="shortcut icon"
+          href="https://d3t14gfu9ehll4.cloudfront.net/themes/4cbe0dae-e027-4aaf-9d52-ddb015486ba8/root_SmallGraphic_ARTuIHa.png"
+          type="image/png">
+    <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=Trend%20Sans:One">
+    <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=Futura%20Md%20BT:One">
+</head>
+
+<body>
+<div class="container">
+    <div class="largeHeadline" style="margin-left: 30%;">
+        <h1 class="largeHeadline">Victoria</h1>
+    </div>
+
+    <div class="smallGraphic">
+    </div>
+
+    <div class="largeHeadline">
+        <h1 class="largeHeadline">Timothy</h1>
+    </div>
+</div>
+<div id="navbar">
+    <ul>
+        <li><a href="/main_page/">HOME</a></li>
+        <li><a href="/rsvp/">RSVP</a></li>
+        <li><a href="/photo/">PHOTOS</a></li>
+        <li><a href="/event/">EVENTS</a></li>
+        <li><a href="/party/">WEDDING PARTY</a></li>
+        <li><a href="/travel/">TRAVEL</a></li>
+        <li><a href="/gift/">GIFT REGISTRY</a></li>
+    </ul>
+</div>
+
+<ul id="hide">
+    <li><a>&#9776;MENU</a>
+        <ul>
+            <li><a href="/main_page/">HOME</a></li>
+            <li><a href="/rsvp/">RSVP</a></li>
+            <li><a href="/photo/">PHOTOS</a></li>
+            <li><a href="/event/">EVENTS</a></li>
+            <li><a href="/party/">WEDDING PARTY</a></li>
+            <li><a href="/travel/">TRAVEL</a></li>
+            <li><a href="/gift/">GIFT REGISTRY</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+<br><br>
+<hr color="black">
+<div class="maidinfo">
+    <div class="contlL">
+        <h2 class="largeLetters">Wedding Party</h2>
+    </div>
+    <div class="contsD">
+        <div class="smallDivider"></div>
+    </div>
+
+    <div class="blocInfo">
+        <div class="maidtext">
+            <div class="maidnames">
+                <h2>MEGAN MUELLER</h2>
+                <h3>MAID OF HONOR</h3>
+            </div>
+
+            {% if  model_text.1 %}
+                <p class="text"> {{ model_text.1.body }}</p>
+            {% endif %}
+        </div>
+        <div class="maidfoto">
+            {% if  model_photo.10 %}
+                <img src="{{ model_photo.10.photo.url }}" title="{{ model_photo.10.title }}" class="image">
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="blocInfo">
+
+        <div class="maidtext">
+            <div class="maidnames">
+                <h2>HALEY CLARKE</h2>
+                <h3>BRIDESMAID</h3>
+            </div>
+
+            {% if  model_text.2 %}
+                <p class="text"> {{ model_text.2.body }}</p>
+            {% endif %}
+        </div>
+        <div class="maidfoto">
+            {% if  model_photo.11 %}
+                <img src="{{ model_photo.11.photo.url }}" title="{{ model_photo.11.title }}" class="image">
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="blocInfo">
+
+        <div class="maidtext">
+            <div class="maidnames">
+                <h2>DIANA HUANG</h2>
+                <h3>BRIDESMAID</h3>
+            </div>
+
+            {% if  model_text.3 %}
+                <p class="text"> {{ model_text.3.body }}</p>
+            {% endif %}
+        </div>
+
+        <div class="maidfoto">
+            {% if  model_photo.12 %}
+                <img src="{{ model_photo.12.photo.url }}" title="{{ model_photo.12.title }}" class="image">
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="blocInfo">
+
+        <div class="maidtext">
+            <div class="maidnames">
+                <h2>CHRIS MASSEY</h2>
+                <h3>BEST MAN</h3>
+            </div>
+
+            {% if  model_text.4 %}
+                <p class="text"> {{ model_text.4.body }}</p>
+            {% endif %}
+        </div>
+        <div class="maidfoto">
+            {% if  model_photo.13 %}
+                <img src="{{ model_photo.13.photo.url }}" title="{{ model_photo.13.title }}" class="image">
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="blocInfo">
+
+        <div class="maidtext">
+            <div class="maidnames">
+                <h2>MATTHEW CRAFT</h2>
+                <h3>GROOMSMAN</h3>
+            </div>
+
+            {% if  model_text.5 %}
+                <p class="text"> {{ model_text.5.body }}</p>
+            {% endif %}
+        </div>
+        <div class="maidfoto">
+            {% if  model_photo.14 %}
+                <img src="{{ model_photo.14.photo.url }}" title="{{ model_photo.14.title }}" class="image">
+            {% endif %}
+        </div>
+    </div>
+
+
+    <div class="blocInfo">
+
+        <div class="maidtext">
+            <div class="maidnames">
+                <h2>BENJAMIN HOLLAND</h2>
+                <h3>GROOMSMAN</h3>
+            </div>
+
+            {% if  model_text.6 %}
+                <p class="text"> {{ model_text.6.body }}</p>
+            {% endif %}
+        </div>
+        <div class="maidfoto">
+            {% if  model_photo.15 %}
+                <img src="{{ model_photo.15.photo.url }}" title="{{ model_photo.15.title }}" class="image">
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<br>
+<hr color="black">
+{% include "blog/footer.html" %}
+</body>
+</html>

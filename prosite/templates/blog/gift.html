@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/style_gift.css' %}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon"
+          href="https://d3t14gfu9ehll4.cloudfront.net/themes/4cbe0dae-e027-4aaf-9d52-ddb015486ba8/root_SmallGraphic_ARTuIHa.png"
+          type="image/png">
+    <title>Victoria &amp; Timothy — Minted</title>
+</head>
+<body>
+<div class="container">
+    <div class="headlpos">
+        <h1 class="largeHeadline">Victoria</h1>
+    </div>
+
+    <div class="smallGraphic">
+    </div>
+
+    <div class="largeHeadline">
+        <h1 class="largeHeadline">Timothy</h1>
+    </div>
+
+    <div id="navbar">
+        <ul>
+            <li><a href="/main_page/">HOME</a></li>
+            <li><a href="/rsvp/">RSVP</a></li>
+            <li><a href="/photo/">PHOTOS</a></li>
+            <li><a href="/event/">EVENTS</a></li>
+            <li><a href="/party">WEDDING PARTY</a></li>
+            <li><a href="/travel/">TRAVEL</a></li>
+            <li><a href="/gift/">GIFT REGISTRY</a></li>
+        </ul>
+    </div>
+    <ul id="hide">
+        <li><a>&#9776;MENU</a>
+            <ul>
+                <li><a href="/main_page/">HOME</a></li>
+                <li><a href="/rsvp/">RSVP</a></li>
+                <li><a href="/photo/">PHOTOS</a></li>
+                <li><a href="/event/">EVENTS</a></li>
+                <li><a href="/party/">WEDDING PARTY</a></li>
+                <li><a href="/travel/">TRAVEL</a></li>
+                <li><a href="/gift/">GIFT REGISTRY</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+<br><br>
+<hr color="black">
+
+<div class="maidinfo">
+    <br>
+    <div style="margin-bottom: 30px; text-align: center">
+        <h2 class="largeLetters">
+            GIFT REGISTRY</h2>
+    </div>
+    <div style="margin-bottom: 30px; text-align: center;">
+        <div class="smallDivider"></div>
+    </div>
+
+    <div class="content">
+
+        <div class="names">
+            <h2>TARGET</h2>
+
+            <p class="smallText">Search for our names
+                <br>on the site or print
+                <br>our registry in the store.
+            </p>
+            <h8>View Registry</h8>
+            <br><br>
+
+            <div class="contsD">
+                <div class="smallDivider"></div>
+            </div>
+
+            <h2>BED BATH & BEYOND</h2>
+            <h8>View Registry</h8>
+
+        </div>
+    </div>
+</div>
+
+<hr color="black">
+{% include "blog/footer.html" %}
+</body>
+</html>

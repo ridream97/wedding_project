@@ -1,0 +1,351 @@
+body {
+    font-family: "Futura Md BT";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 2;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 14px;
+    margin: 0;
+    background-color: #fff;
+    background-image: none;
+    background-repeat: repeat;
+    background-position: left top;
+    color: #222;
+    font-variant-ligatures: none;
+}
+
+body a {
+    color: #000000;
+}
+
+body a:focus, body a:hover, body a:active {
+    color: rgb(0, 0, 0);
+}
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+
+/*********    Navbar    ********/
+
+#navbar {
+    overflow: hidden;
+    background-color: #fff;
+    padding-left: 250px;
+}
+
+#navbar a {
+    color: #111;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    font-family:"Trend Sans One";
+}
+
+#navbar li{
+    float: left;
+    list-style: none;
+    padding: 0 15px;
+}
+
+#navbar a:hover {
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+#hide {
+    display: none;
+    }
+        @media screen and (max-width: 1350px) {
+             #navbar {
+                padding-left:160px;
+            }
+        }
+        @media screen and (max-width: 1250px) {
+             #navbar {
+                padding-left:130px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+             #navbar {
+                padding-left:90px;
+            }
+        }
+
+         @media screen and (max-width: 900px) {
+             #navbar {
+                 display: none;
+             }
+            #hide {
+                font-size: 25px;
+                display: block;
+                text-decoration: none;
+                list-style: none;
+                float: left;
+            }
+            .micon{
+                text-align: center;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            #hide {
+                font-size: 20px;
+                display: block;
+                text-decoration: none;
+                list-style: none;
+                float: left;
+            }
+        }
+
+
+#hide ul{
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+}
+
+#hide li:hover ul { display: block; }
+#hide, #hide ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+#hide {
+    color: #000000;
+    height: 40px;
+    background-color: #fff;
+    padding-left: 20px;
+    font-size:20px;
+    text-align: center;
+    min-width: 490px;
+}
+#hide li {
+    float: left;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+#hide li a {
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+    width: 190px;
+    color: #000000;;
+    text-decoration: none;
+    text-align: center;
+}
+
+#hide ul li { float: none;border: 1px solid #2d2d2d; }
+#hide li:hover { background-color: #fff; }
+#hide ul li:hover { background-color: #fff; }
+
+
+/************   Headline   **************/
+
+.сontainer {
+    font-family: "Futura Md BT";
+    font-weight:400;
+    font-style:normal;
+    line-height:2;
+    text-transform:none;
+    letter-spacing:normal;
+    font-size:14px;
+    color:#222;
+    text-align:center;
+    padding:50px 0 50px 100px;
+    margin-left: 32.4%;
+}
+
+.headlpos{
+    text-align: center;
+    display: inline-block;
+    margin-left: 30%;
+}
+.largeHeadline {
+    font-family:"Trend Sans One";
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.smallGraphic{
+    text-align: center;
+    margin-bottom: -26px;
+    display: inline-block;
+    width:120px;
+    height:80px;
+    background-image:url(https://d3t14gfu9ehll4.cloudfront.net/themes/4cbe0dae-e027-4aaf-9d52-ddb015486ba8/root_SmallGraphic_ARTuIHa.png);
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+        @media screen and (max-width: 1200px) {
+             .largeHeadline {
+                 font-size: 25px;
+             }
+
+             .smallGraphic {
+                 width:100px;
+                 height:60px;
+                 margin-bottom: -21px;
+             }
+        }
+
+        @media screen and (max-width: 700px) {
+
+              .largeHeadline {
+                 font-size: 15px;
+             }
+              .smallGraphic{
+                 width:80px;
+                 height:40px;
+                 margin-bottom: -17px;
+             }
+        }
+        @media screen and (max-width: 500px) {
+              .largeHeadline {
+                 font-size: 15px;
+             }
+              .smallGraphic{
+                  display: block;
+                  width:80px;
+                  height:40px;
+
+             }
+         }
+
+/********************** content ***************************/
+ .largeLetters{
+     font-family: "Trend Sans One";
+     font-weight: 100;
+     font-style: normal;
+     line-height: 1;
+     text-transform: uppercase;
+     text-align: center;
+     letter-spacing: normal;
+     font-size: 30px;
+     margin-top: 65px;
+ }
+
+.smallDivider{
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    background-image: url(https://d3t14gfu9ehll4.cloudfront.net/themes/4cbe0dae-e027-4aaf-9d52-ddb015486ba8/root_SmallDivider_3frXmei.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.contsD{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ .largeLetters_1{
+     font-family: "Trend Sans One";
+     font-weight: 400;
+     font-style: normal;
+     line-height: 1;
+     text-transform: uppercase;
+     text-align: center;
+     letter-spacing: normal;
+     font-size: 20px;
+     margin-top: 35px;
+     margin-bottom: 30px;
+ }
+.inputPlace{
+    font-family:"Trend Sans One";
+    font-style: normal;
+    line-height: 2;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 10px;
+    width: 35%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid; border-radius: 3px;
+    border-width: 1px;
+    box-sizing: border-box;
+    padding: 8px 20px;
+    margin-left:32.4%;
+}
+.butt{
+    font-family: "Trend Sans One";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 14px;
+    display: block;
+    width: 35%;
+    margin-left: 32.4%;
+    margin-bottom: 7%;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    padding: 12px;
+    border-width: 1px;
+    border-style: solid;
+    text-decoration: none;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 0px;
+}
+/*****************************************/
+
+  @font-face {
+    font-family: "Trend Sans One";
+    font-style: normal;
+    font-weight: 200;
+    src: local("TrendSansOne"), local('TrendSansOne'), url("https://d3jpwrui3eswtl.cloudfront.net/trendsans/TrendSansOne-Regular.otf") format('opentype');
+  }
+
+  @font-face {
+    font-family: "Trend Sans";
+    font-style: normal;
+    font-weight: 200;
+    src: local("TrendSansOne"), local('TrendSansOne'), url("https://d3jpwrui3eswtl.cloudfront.net/trendsans/TrendSansOne-Regular.otf") format('opentype');
+  }
+
+
+  @font-face {
+    font-family: "Futura Md BT Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Futura Medium BT"), local('FuturaBT-Medium'), url("https://d3jpwrui3eswtl.cloudfront.net/futuramdbt/FuturaMediumBT-Medium.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: "Futura Md BT";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Futura Medium BT"), local('FuturaBT-Medium'), url("https://d3jpwrui3eswtl.cloudfront.net/futuramdbt/FuturaMediumBT-Medium.ttf") format('truetype');
+  }
+
+
+
+/****************************************/
